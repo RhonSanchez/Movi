@@ -1,16 +1,6 @@
 body {
   margin: 0;
 }
-/*
-.content {
-  grid-template-areas: ""
-} */
-/*
-.header, .content, .peli, .sidebar, .footer {
-  border: 1px solid blue;
-  width: 100px;
-  height: 100px;
-} */
 
 .header {
   width: 100%;
@@ -44,7 +34,7 @@ body {
 }
 
 .title {
-  color: #ff200f;
+  color: #ff6565;
   font-size: 2em;
 }
 
@@ -70,3 +60,46 @@ body {
   height: 50px;
   border-radius: 50%;
 }
+
+.content {
+  display: grid;
+  grid-gap: 10px;
+  grid-template: repeat(1, 600px) / 1.5fr 10.5fr ;
+  grid-template-areas: "sidebar peli";
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.peli {
+  grid-area: peli;
+}
+
+.sidebar-2 {
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  background: #ff6565;
+}
+
+.sidebar-item {
+  height: 100px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.sidebar-item h3 {
+  font-size: .8em;
+  color: white;
+}
+
+.sidebar-2 .sidebar-item:nth-of-type(4) {
+  grid-row: 6 / 7;
+}
+/*
+.peli-2 {
+  display: grid;
+  grid-gap: 10px;
+  grid-template: repeat(3, 200px) / repeat(3, 4fr);
+} */
