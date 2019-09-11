@@ -137,8 +137,9 @@ body {
 }
 
 .sidebar-item h3 {
-  font-size: .8em;
+  font-size: 1em;
   color: white;
+  margin-top: 0px;
 }
 
 .sidebar-2 .sidebar-item:nth-of-type(4) {
@@ -164,14 +165,16 @@ body {
 
 .peli-img img {
   width: inherit;
-  height: inherit;
+  max-height: 200px;
 }
 
 .peli-about {
+  width: 100%;
   position: absolute;
   bottom: 4px;
   background-color: rgba(255, 101, 101, 0.5);
-  padding: 5px 5px 0 5px;
+  padding: 5px 0 0;
+  text-align: center;
 }
 
 .peli-about h3 {
